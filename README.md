@@ -1,63 +1,45 @@
-# JavaScript Homework - JavaScript and DOM Manipulation
+# ALIENS-R-REAL - JavaScript Challenge 
+
+In this little HTML/JavaScript project, we exercise our acquired JavaScript skills to display and filter a table with alledged UFU sightings. We are using the d3 library and plain modern JavaScript in this project.
+Note that the design of the page is based on Bootstrap 3.3.7. It's taken from the starter html/javascript that was provided with the exercise instructions. There was too little time to customize the design.
 
 ## Background
 
-WAKE UP SHEEPLE! The extra-terrestrial menace has come to Earth and we here at `ALIENS-R-REAL` have collected all of the eye-witness reports we could to prove it! All we need to do now is put this information online for the world to see and then the matter will finally be put to rest.
+For this project, I created two JavaScripts.
 
-There is just one tiny problem though... our collection is too large to search through manually. Even our most dedicated followers are complaining that they are having trouble locating specific reports in this mess.
+* [UFO-level-1](#UFO-level-1)
+* [UFO-level-2](#UFO-level-2)
 
-That's why we are hiring you. We need you to write code that will create a table dynamically based upon a [dataset we provide](StarterCode/static/js/data.js). We also need to allow our users to filter the table data for specific values. There's a catch though... we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
 
-You can handle this... right? The planet Earth needs to know what we have found!
+### <a name="UFO-level-1"></a>UFO-level-1
 
-## Your Task
+Inside the **UFO-level-1** folder, the UFO dataset provided in the form of an array of JavaScript objects, JavaScript code appends the table to web page and then adds new rows of data for each UFO sighting. 
+Each table has a column for date/time, city, state, country, shape, and comment at the very least.Used a date form in HTML document and wrote JavaScript code that listen for events and search through the date/time column to find rows that match user input.
 
-### Before You Begin
+The index file is located [here](.UFO-level-1/index.html).
+The script file is located [here](./UFO-level-1/static/js/app.js).
+The data file is located [here](./UFO-level-1/static/js/data.js).
 
-1. Create a new repository for this project called `javascript-challenge`. **Do not add this homework to an existing repository**.
 
-2. Clone the new repository to your computer.
+### <a name="UFO-level-2"></a>UFO-level-2
 
-3. Inside your local git repository, create a directory for the Javascript challenge. Use the folder names to correspond to the challenges: **UFO-level-1** and **UFO-level-2**.
+Inside the **UFO-level-2** folder, the UFO dataset provided in the form of an array of JavaScript objects, JavaScript code appends the table to web page and then adds new rows of data for each UFO sighting. 
+Each table has a column for date/time, city, state, country, shape, and comment at the very least. Used multiple input tags and/or select dropdowns, wrote JavaScript code so the user can to set multiple filters and search for UFO sightings using the following criteria based on the table columns:
+date/time, city, state, country, shape
 
-4. Add your **html** files to this folder as well as your static folder containing your javascript. This will be the main script to run for analysis.
+The index file is located [here](.UFO-level-2/index.html).
+The script file is located [here](./UFO-level-2/static/js/app.js).
+The data file is located [here](./UFO-level-2/static/js/data.js).
 
-5. Push the above changes to GitHub or GitLab.
+## Running the scripts
 
-### Level 1: Automatic Table and Date Search (Required)
+To run either one of the scripts:
 
-* Create a basic HTML web page or use the [index.html](StarterCode/index.html) file provided (we recommend building your own custom page!).
+* Run the script by including the data.js and app.js JavaScript file in HTML file and then in Visual Studio select go live and run the HTML file in browser, which has app.js JavaScript file get execute.
 
-* Using the UFO dataset provided in the form of an array of JavaScript objects, write code that appends a table to your web page and then adds new rows of data for each UFO sighting.
+## Technologies used
 
-  * Make sure you have a column for `date/time`, `city`, `state`, `country`, `shape`, and `comment` at the very least.
+The following technologies were used to build the scripts:
 
-* Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
-
-### Level 2: Multiple Search Categories (Optional)
-
-* Complete all of Level 1 criteria.
-
-* Using multiple `input` tags and/or select dropdowns, write JavaScript code so the user can to set multiple filters and search for UFO sightings using the following criteria based on the table columns:
-
-  1. `date/time`
-  2. `city`
-  3. `state`
-  4. `country`
-  5. `shape`
-
-- - -
-
-### Dataset
-
-* [UFO Sightings Data](StarterCode/static/js/data.js)
-
-- - -
-
-**Good luck!**
-
-- - -
-
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
+* JavaScript
+* HTML
